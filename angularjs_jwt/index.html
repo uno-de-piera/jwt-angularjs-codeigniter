@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--le decimos a nuestra página que vamos a utilizar el módulo app que hemos creado-->
+<html ng-app="app">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>AngularJS</title>
+  <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./statics/styles.css">
+  <!--cdn con la version 1.2.4 de angular.js-->
+  <script type='text/javascript' src="./bower_components/angular/angular.js"></script>
+  <script type='text/javascript' src="./bower_components/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="./bower_components/angular-jwt/dist/angular-jwt.js"></script>
+  <script type="text/javascript" src="./bower_components/a0-angular-storage/dist/angular-storage.js"></script>
+  <!--archivo app.js, donde hemos definido nuestro modulo app-->
+  <script type='text/javascript' src="app.js"></script>
+</head>
+    <body>
+        <div class="container">
+            <!--directiva ng-view, aquí cargara todo el contenido-->
+            <div ng-view></div>
+        </div>
+    </body>
+</html>

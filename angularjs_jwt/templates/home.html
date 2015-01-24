@@ -1,0 +1,12 @@
+<div class="row">
+	<div class="alert alert-info">User: {{user}}</div>
+	<button ng-click="getMovies()" class="btn btn-info btn-large">Get movies</button>
+
+	<div class="panel panel-default" ng-repeat="movie in movies">
+		<div class="panel-heading">
+			<h3 class="panel-title"><b>Título</b>: {{movie.name}}</h3>
+		</div>
+		<div class="panel-body"><b>Director</b>: {{movie.author}}</div>
+		<div class="panel-footer"><b>Fecha de estreno</b>{{movie.created_at}}</div>
+	</div>
+</div>
